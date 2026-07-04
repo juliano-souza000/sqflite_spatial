@@ -46,10 +46,3 @@ dev_dependencies:
     sdk: flutter
   test_api: ">=0.2.19"
   pub_semver: ">=2.0.0"
-
-# sqflite_spatial_android is not yet published; resolved locally for
-# development/testing in this repo. Ignored by downstream consumers (pub only
-# applies overrides declared in the root package being resolved).
-dependency_overrides:
-  sqflite_spatial_android:
-    path: ../sqflite_android
