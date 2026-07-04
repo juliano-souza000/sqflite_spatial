@@ -44,4 +44,6 @@ flutter:
 dependency_overrides:
   sqflite:
     path: ../
+  sqflite_android:
+    path: ../../sqflite_android
 

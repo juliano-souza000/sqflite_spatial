@@ -46,7 +46,9 @@ android {
     }
 
     defaultConfig {
-        minSdk = 19
+        // Raised from 19: io.github.ev-map:android-spatialite requires minSdk 21.
+        // See README.md "Native binary provenance".
+        minSdk = 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
@@ -56,4 +58,9 @@ android {
 
 dependencies {
     testImplementation 'junit:junit:4.13.2'
+    // SpatiaLite-enabled native SQLite (org.spatialite.database.*, API-compatible fork of
+    // android.database.sqlite.*), bundling SQLite 3.49.1 + SpatiaLite 4.3.0a + GEOS + Proj4 +
+    // lwgeom. Published to Maven Central (immutable/signed), Apache 2.0.
+    // See README.md "Native binary provenance".
+    implementation 'io.github.ev-map:android-spatialite:2.3.0-alpha'
 }

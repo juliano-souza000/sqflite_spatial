@@ -17,6 +17,9 @@ export 'sqlite_api.dart';
 export 'src/factory_impl.dart' show databaseFactorySqflitePlugin;
 export 'src/sqflite_darwin.dart' show SqfliteDarwin;
 export 'src/sqflite_plugin.dart' show SqflitePlugin;
+export 'src/sqflite_spatialite.dart';
+export 'src/sqflite_spatialite_ddl.dart';
+export 'src/sqflite_spatialite_open.dart' show openSpatialDatabase;
 
 ///
 /// sqflite plugin

@@ -1,6 +1,7 @@
 package com.tekartik.sqflite;
 
-import android.database.sqlite.SQLiteProgram;
+// SpatiaLite-enabled fork of android.database.sqlite.SQLiteProgram (see Database.java).
+import org.spatialite.database.SQLiteProgram;
 
 import java.util.ArrayList;
 import java.util.Arrays;

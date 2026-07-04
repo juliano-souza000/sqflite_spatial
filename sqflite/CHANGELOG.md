@@ -1,3 +1,12 @@
+## 2.5.0
+
+* Adds SpatiaLite spatial query support: `openSpatialDatabase`, `SqfliteDatabaseSpatialiteExt`
+  (`spatialDistance`, `spatialNearest`, `spatialContains`, `spatialIntersects`,
+  `spatialBoundingBoxFilter`) and DDL helpers (`addGeometryColumnSql`, `createSpatialIndexSql`,
+  `recoverSpatialIndexSql`, `discardGeometryColumnSql`). See `doc/spatial_migration_example.md`.
+  Currently only produces correct results on Android, since `sqflite_android` 3.0.0+ is the only
+  bundled platform implementation whose native engine understands SpatiaLite SQL.
+
 ## 2.4.3
 
 * Requires dart 3.12

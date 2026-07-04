@@ -21,12 +21,11 @@ import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
-import android.database.DatabaseErrorHandler;
 import android.database.SQLException;
+// Real framework exception class: kept only so handleException's instanceof check still
+// compiles. org.spatialite.database's native open path does not throw this specific subclass
+// (see Database.java handleException below) -- open failures surface as a plain SQLException.
 import android.database.sqlite.SQLiteCantOpenDatabaseException;
-import android.database.sqlite.SQLiteCursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteStatement;
 import android.os.Build;
 import android.util.Log;
 
@@ -41,6 +40,13 @@ import com.tekartik.sqflite.operation.QueuedOperation;
 import com.tekartik.sqflite.operation.SqlErrorInfo;
 
 import org.jetbrains.annotations.NotNull;
+// SpatiaLite-enabled native SQLite, API-compatible fork of android.database.sqlite.* (same
+// method signatures, reuses android.database.Cursor/SQLException directly).
+// See README.md "Native binary provenance".
+import org.spatialite.DatabaseErrorHandler;
+import org.spatialite.database.SQLiteCursor;
+import org.spatialite.database.SQLiteDatabase;
+import org.spatialite.database.SQLiteStatement;
 
 import java.io.File;
 import java.util.ArrayList;
