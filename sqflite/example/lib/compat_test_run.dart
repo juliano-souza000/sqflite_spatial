@@ -1,6 +1,5 @@
-import 'package:sqflite/sqflite.dart';
-
 import 'package:sqflite_example_common/database/database.dart';
+import 'package:sqflite_spatial/sqflite.dart';
 
 /// Test compatibility old API.
 Future<void> testDebugModeCompat() async {

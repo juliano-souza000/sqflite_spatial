@@ -67,7 +67,7 @@ Temporarily turn on SQL logging on the console by adding the following call in y
 
 ````dart
 import 'package:sqflite_common/sqflite_dev.dart';
-import 'package:sqflite/sqflite.dart';
+import 'package:sqflite_spatial/sqflite.dart';
 
 Future<void> main() async {
   // Turn logging on

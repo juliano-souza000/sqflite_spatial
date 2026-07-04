@@ -4,7 +4,7 @@ import 'dart:io';
 import 'dart:collection';
 import 'package:flutter/cupertino.dart';
 import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
+import 'package:sqflite_spatial/sqflite.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 /// Test from issues #1204 (wal mode on android), thanks to absar

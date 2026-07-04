@@ -1,6 +1,6 @@
 import 'package:flutter_driver/driver_extension.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sqflite/sqflite.dart';
+import 'package:sqflite_spatial/sqflite.dart';
 import 'package:sqflite_common/sqflite_dev.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:sqflite_common_test/all_test.dart' as all;

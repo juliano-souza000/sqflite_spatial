@@ -1,4 +1,4 @@
-import 'package:sqflite/sqflite.dart';
+import 'package:sqflite_spatial/sqflite.dart';
 
 import 'factory_impl.dart';
 

@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:sqflite/src/compat.dart';
-import 'package:sqflite/src/constant.dart';
-import 'package:sqflite/src/sqflite_impl.dart';
-import 'package:sqflite/src/utils.dart' as impl;
-import 'package:sqflite/utils/utils.dart' as utils;
+import 'package:sqflite_spatial/src/compat.dart';
+import 'package:sqflite_spatial/src/constant.dart';
+import 'package:sqflite_spatial/src/sqflite_impl.dart';
+import 'package:sqflite_spatial/src/utils.dart' as impl;
+import 'package:sqflite_spatial/utils/utils.dart' as utils;
 
 ///
 /// sqflite plugin. Might be deprecated/removed in the future.

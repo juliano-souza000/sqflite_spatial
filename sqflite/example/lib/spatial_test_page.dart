@@ -1,5 +1,5 @@
-import 'package:sqflite/sqflite.dart';
 import 'package:sqflite_example_common/test_page.dart';
+import 'package:sqflite_spatial/sqflite.dart';
 
 // ignore_for_file: avoid_print
 

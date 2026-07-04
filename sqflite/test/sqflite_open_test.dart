@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sqflite/sqflite.dart';
+import 'package:sqflite_spatial/sqflite.dart';
 
 T? _ambiguate<T>(T? value) => value;
 const channel = MethodChannel('com.tekartik.sqflite');

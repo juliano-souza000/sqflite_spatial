@@ -11,7 +11,7 @@ dependencies:
   collection: any
   flutter:
     sdk: flutter
-  sqflite:
+  sqflite_spatial:
   sqflite_common:
   synchronized:
   matcher:
@@ -42,8 +42,8 @@ flutter:
   uses-material-design: true
 
 dependency_overrides:
-  sqflite:
+  sqflite_spatial:
     path: ../
-  sqflite_android:
+  sqflite_spatial_android:
     path: ../../sqflite_android
 

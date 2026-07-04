@@ -1,19 +1,19 @@
-name: sqflite
+name: sqflite_spatial
 repository: https://github.com/tekartik/sqflite/tree/master/sqflite
 issue_tracker: https://github.com/tekartik/sqflite/issues
-description: Flutter plugin for SQLite, a self-contained, high-reliability,
-  embedded, SQL database engine.
-version: 2.5.0
+description: Android Flutter plugin for SQLite with SpatiaLite spatial query
+  support (geospatial storage, indexing and querying), forked from sqflite.
+version: 1.0.0
 
-# This package supports all platforms listed below.
+# Android only: this fork adds SpatiaLite spatial support and is not
+# published for iOS/macOS/other platforms.
 platforms:
   android:
-  ios:
-  macos:
 
 topics:
   - sql
   - database
+  - gis
 
 funding:
   - https://github.com/sponsors/alextekartik
@@ -28,17 +28,12 @@ flutter:
   plugin:
     platforms:
       android:
-        default_package: sqflite_android
-      ios:
-        default_package: sqflite_darwin
-      macos:
-        default_package: sqflite_darwin
+        default_package: sqflite_spatial_android
 
 dependencies:
   flutter:
     sdk: flutter
-  sqflite_android: ">=2.4.3 <4.0.0"
-  sqflite_darwin: ">=2.4.3 <4.0.0"
+  sqflite_spatial_android: ">=1.0.0 <2.0.0"
   sqflite_platform_interface: ">=2.4.1 <4.0.0"
   sqflite_common: ">=2.5.9 <4.0.0"
   path: ">=1.8.0 <3.0.0"
@@ -51,3 +46,10 @@ dev_dependencies:
     sdk: flutter
   test_api: ">=0.2.19"
   pub_semver: ">=2.0.0"
+
+# sqflite_spatial_android is not yet published; resolved locally for
+# development/testing in this repo. Ignored by downstream consumers (pub only
+# applies overrides declared in the root package being resolved).
+dependency_overrides:
+  sqflite_spatial_android:
+    path: ../sqflite_android

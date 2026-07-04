@@ -1,13 +1,13 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
-import 'package:sqflite/sqflite.dart';
-import 'package:sqflite/src/exception_impl.dart' as impl;
-import 'package:sqflite/src/sqflite_impl.dart' as impl;
-import 'package:sqflite/src/sqflite_import.dart';
 import 'package:sqflite_common/sqflite.dart' as sqflite_common;
 // ignore: implementation_imports
 import 'package:sqflite_common/src/mixin/platform.dart';
+import 'package:sqflite_spatial/sqflite.dart';
+import 'package:sqflite_spatial/src/exception_impl.dart' as impl;
+import 'package:sqflite_spatial/src/sqflite_impl.dart' as impl;
+import 'package:sqflite_spatial/src/sqflite_import.dart';
 
 import 'dev_utils.dart'; // ignore: unused_import
 

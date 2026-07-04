@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sqflite/sqlite_api.dart';
-import 'package:sqflite/src/constant.dart';
-import 'package:sqflite/src/mixin/factory.dart';
+import 'package:sqflite_spatial/sqlite_api.dart';
+import 'package:sqflite_spatial/src/constant.dart';
+import 'package:sqflite_spatial/src/mixin/factory.dart';
 
 import 'src_mixin_test.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-import 'package:sqflite/sqflite_dev.dart';
+import 'package:sqflite_spatial/sqflite_dev.dart';
 import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 
 /// The Web plugin registration.

@@ -1,9 +1,10 @@
-name: sqflite_android
+name: sqflite_spatial_android
 repository: https://github.com/tekartik/sqflite/tree/master/sqflite_android
 issue_tracker: https://github.com/tekartik/sqflite/issues
-description: Android flutter plugin for SQLite, a self-contained, high-reliability,
-  embedded, SQL database engine.
-version: 3.0.0
+description: Android implementation of sqflite_spatial, using a SpatiaLite-enabled
+  native SQLite engine (org.spatialite.database) instead of the Android framework's
+  built-in SQLite. Forked from sqflite_android.
+version: 1.0.0
 
 # This package supports all platforms listed below.
 platforms:

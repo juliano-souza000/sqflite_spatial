@@ -1,47 +1,30 @@
-# sqflite
+# sqflite_spatial
 
-[![pub package](https://img.shields.io/pub/v/sqflite.svg)](https://pub.dev/packages/sqflite)
-
-SQLite plugin for [Flutter](https://flutter.io).
-Supports iOS, Android and MacOS.
+Android SQLite plugin for [Flutter](https://flutter.io) with SpatiaLite spatial query support.
+Android only. Forked from [tekartik/sqflite](https://github.com/tekartik/sqflite) by
+[Alex Tekartik](https://github.com/alextekartik) — see the [repo root README](../README.md) for
+what's different and full credit. If you don't need spatial features or need other platforms, use
+the original [`sqflite`](https://pub.dev/packages/sqflite) instead.
 
 * Support transactions and batches
 * Automatic version managment during open
 * Helpers for insert/query/update/delete queries
-* DB operation executed in a background thread on iOS and Android
-
-Other platforms support:
-* Linux/Windows/DartVM support using [sqflite_common_ffi](https://pub.dev/packages/sqflite_common_ffi)
-* Experimental Web support using [sqflite_common_ffi_web](https://pub.dev/packages/sqflite_common_ffi_web).
-
-Usage example: 
-* [notepad_sqflite](https://github.com/alextekartik/flutter_app_example/tree/master/notepad_sqflite): Simple flutter notepad working on iOS/Android/Windows/linux/Mac
+* DB operations executed in a background thread
+* Spatial storage, R*Tree indexing, and querying (distance, nearest, contains, intersects,
+  bounding-box) via SpatiaLite — see the [repo root README](../README.md) for a usage example and
+  [`doc/spatial_migration_example.md`](doc/spatial_migration_example.md) for schema migrations
 
 ## Getting Started
 
-To get started, you need to add `sqflite` to your project. Follow the steps below:
-
-1. Open the terminal in your project root. You can do this by pressing `Alt+F12` in Android Studio or `` Ctrl+` `` in VS Code.
-
-2. Run the following command:
-
-```bash
-flutter pub add sqflite
-```
-
-This command will add a line to your package's `pubspec.yaml` file and run an implicit `flutter pub get`. The added line will look like this:
-
-```yaml
-dependencies:
-  sqflite: 
-```
+Not yet published to pub.dev — add `sqflite_spatial` and `sqflite_spatial_android` to your
+project via git or a local path (see the [repo root README](../README.md)).
 
 ## Usage example
 
 Import `sqflite.dart`
 
 ```dart
-import 'package:sqflite/sqflite.dart';
+import 'package:sqflite_spatial/sqflite.dart';
 ```
 
 ### Opening a database

@@ -1,21 +1,20 @@
 import 'dart:async';
 
-import 'package:sqflite/src/compat.dart';
-import 'package:sqflite/src/constant.dart';
-import 'package:sqflite/src/sqflite_android.dart';
-import 'package:sqflite/src/sqflite_impl.dart';
-import 'package:sqflite/src/utils.dart' as impl;
-import 'package:sqflite/utils/utils.dart' as utils;
+import 'package:sqflite_spatial/src/compat.dart';
+import 'package:sqflite_spatial/src/constant.dart';
+import 'package:sqflite_spatial/src/sqflite_android.dart';
+import 'package:sqflite_spatial/src/sqflite_impl.dart';
+import 'package:sqflite_spatial/src/utils.dart' as impl;
+import 'package:sqflite_spatial/utils/utils.dart' as utils;
 
 import 'sqlite_api.dart';
 
-export 'package:sqflite/sql.dart' show ConflictAlgorithm;
-export 'package:sqflite/src/compat.dart';
 export 'package:sqflite_common/sqflite.dart';
+export 'package:sqflite_spatial/sql.dart' show ConflictAlgorithm;
+export 'package:sqflite_spatial/src/compat.dart';
 
 export 'sqlite_api.dart';
 export 'src/factory_impl.dart' show databaseFactorySqflitePlugin;
-export 'src/sqflite_darwin.dart' show SqfliteDarwin;
 export 'src/sqflite_plugin.dart' show SqflitePlugin;
 export 'src/sqflite_spatialite.dart';
 export 'src/sqflite_spatialite_ddl.dart';

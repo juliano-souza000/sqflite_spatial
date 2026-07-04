@@ -2,5 +2,5 @@
 // * [ConflictAlgorithm]
 // * [escapeName]
 // * [unescapeName]
-export 'package:sqflite/src/sql_builder.dart'
+export 'package:sqflite_spatial/src/sql_builder.dart'
     show ConflictAlgorithm, escapeName, unescapeName;

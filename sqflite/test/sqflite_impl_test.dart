@@ -1,8 +1,8 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sqflite/src/factory_impl.dart';
-import 'package:sqflite/src/mixin/factory.dart';
-import 'package:sqflite/src/sqflite_impl.dart';
+import 'package:sqflite_spatial/src/factory_impl.dart';
+import 'package:sqflite_spatial/src/mixin/factory.dart';
+import 'package:sqflite_spatial/src/sqflite_impl.dart';
 
 T? _ambiguate<T>(T? value) => value;
 
