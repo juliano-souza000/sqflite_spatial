@@ -36,11 +36,11 @@ or a local path until they are):
 dependencies:
   sqflite_spatial:
     git:
-      url: https://github.com/<your-fork-url>/sqflite_spatial
+      url: https://github.com/juliano-souza000/sqflite_spatial
       path: sqflite
   sqflite_spatial_android:
     git:
-      url: https://github.com/<your-fork-url>/sqflite_spatial
+      url: https://github.com/juliano-souza000/sqflite_spatial
       path: sqflite_android
 ```
 

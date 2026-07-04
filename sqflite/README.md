@@ -45,8 +45,8 @@ terminated). If you want to release resources, you can close the database.
 await db.close();
 ```
 
-* See [more information on opening a database](https://github.com/tekartik/sqflite/blob/master/sqflite/doc/opening_db.md).
-* Full [migration example](https://github.com/tekartik/sqflite/blob/master/sqflite/doc/migration_example.md)
+* See [more information on opening a database](https://github.com/juliano-souza000/sqflite_spatial/blob/master/sqflite/doc/opening_db.md).
+* Full [migration example](https://github.com/juliano-souza000/sqflite_spatial/blob/master/sqflite/doc/migration_example.md)
 
 ### Raw SQL queries
     
@@ -109,7 +109,7 @@ assert(count == 1);
 await database.close();
 ```
 
-Basic information on SQL [here](https://github.com/tekartik/sqflite/blob/master/sqflite/doc/sql.md).
+Basic information on SQL [here](https://github.com/juliano-souza000/sqflite_spatial/blob/master/sqflite/doc/sql.md).
 
 ### SQL helpers
 
@@ -350,7 +350,7 @@ int (millisSinceEpoch) or string (iso8601)
 
 `bool` is not a supported SQLite type. Use `INTEGER` and 0 and 1 values.
 
-More information on supported types [here](https://github.com/tekartik/sqflite/blob/master/sqflite/doc/supported_types.md).
+More information on supported types [here](https://github.com/juliano-souza000/sqflite_spatial/blob/master/sqflite/doc/supported_types.md).
 
 ### INTEGER
 
@@ -379,8 +379,8 @@ thread is blocked while in a transaction...
 
 ## More
 
-* [How to](https://github.com/tekartik/sqflite/blob/master/sqflite/doc/how_to.md) guide
-* [Notes about Desktop support](https://github.com/tekartik/sqflite/blob/master/sqflite/doc/desktop_support.md)
-* [Notes about Encryption support](https://github.com/tekartik/sqflite/blob/master/sqflite/doc/encryption_support.md)
-* [Notes about Web support](https://github.com/tekartik/sqflite/blob/master/sqflite/doc/web_support.md)
-* [Notes about SQLite versions](https://github.com/tekartik/sqflite/blob/master/sqflite/doc/version.md) as some features may not be available depending on the SQLite version.
+* [How to](https://github.com/juliano-souza000/sqflite_spatial/blob/master/sqflite/doc/how_to.md) guide
+* [Notes about Desktop support](https://github.com/juliano-souza000/sqflite_spatial/blob/master/sqflite/doc/desktop_support.md)
+* [Notes about Encryption support](https://github.com/juliano-souza000/sqflite_spatial/blob/master/sqflite/doc/encryption_support.md)
+* [Notes about Web support](https://github.com/juliano-souza000/sqflite_spatial/blob/master/sqflite/doc/web_support.md)
+* [Notes about SQLite versions](https://github.com/juliano-souza000/sqflite_spatial/blob/master/sqflite/doc/version.md) as some features may not be available depending on the SQLite version.

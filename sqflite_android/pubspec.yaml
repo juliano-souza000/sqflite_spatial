@@ -1,6 +1,6 @@
 name: sqflite_spatial_android
-repository: https://github.com/tekartik/sqflite/tree/master/sqflite_android
-issue_tracker: https://github.com/tekartik/sqflite/issues
+repository: https://github.com/juliano-souza000/sqflite_spatial/tree/master/sqflite_android
+issue_tracker: https://github.com/juliano-souza000/sqflite_spatial/issues
 description: Android implementation of sqflite_spatial, using a SpatiaLite-enabled
   native SQLite engine (org.spatialite.database) instead of the Android framework's
   built-in SQLite. Forked from sqflite_android.

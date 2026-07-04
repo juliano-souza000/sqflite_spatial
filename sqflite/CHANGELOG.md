@@ -1,11 +1,13 @@
-## 2.5.0
+## 1.0.0
 
+* Initial release of `sqflite_spatial`, forked from `sqflite` 2.5.0-dev (itself derived from
+  `sqflite` 2.4.3). Android only — see README.md for what's different from upstream `sqflite`.
 * Adds SpatiaLite spatial query support: `openSpatialDatabase`, `SqfliteDatabaseSpatialiteExt`
   (`spatialDistance`, `spatialNearest`, `spatialContains`, `spatialIntersects`,
   `spatialBoundingBoxFilter`) and DDL helpers (`addGeometryColumnSql`, `createSpatialIndexSql`,
   `recoverSpatialIndexSql`, `discardGeometryColumnSql`). See `doc/spatial_migration_example.md`.
-  Currently only produces correct results on Android, since `sqflite_android` 3.0.0+ is the only
-  bundled platform implementation whose native engine understands SpatiaLite SQL.
+  Requires `sqflite_spatial_android` (the only platform implementation whose native engine
+  understands SpatiaLite SQL).
 
 ## 2.4.3
 

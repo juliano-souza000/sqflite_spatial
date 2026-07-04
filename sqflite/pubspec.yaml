@@ -1,6 +1,6 @@
 name: sqflite_spatial
-repository: https://github.com/tekartik/sqflite/tree/master/sqflite
-issue_tracker: https://github.com/tekartik/sqflite/issues
+repository: https://github.com/juliano-souza000/sqflite_spatial/tree/master/sqflite
+issue_tracker: https://github.com/juliano-souza000/sqflite_spatial/issues
 description: Android Flutter plugin for SQLite with SpatiaLite spatial query
   support (geospatial storage, indexing and querying), forked from sqflite.
 version: 1.0.0

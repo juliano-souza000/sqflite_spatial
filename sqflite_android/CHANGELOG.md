@@ -1,12 +1,14 @@
-## 3.0.0
+## 1.0.0
 
-* Breaking: replaces the native SQLite engine (`android.database.sqlite.SQLiteDatabase`) with
+* Initial release of `sqflite_spatial_android`, forked from `sqflite_android` 3.0.0-dev
+  (itself forked from `sqflite_android` 2.4.3).
+* Replaces the native SQLite engine (`android.database.sqlite.SQLiteDatabase`) with
   a SpatiaLite-enabled fork (`org.spatialite.database.SQLiteDatabase` from
   `io.github.ev-map:android-spatialite`), enabling geospatial storage, indexing and querying
-  (see `package:sqflite`'s `openSpatialDatabase` and `SqfliteDatabaseSpatialiteExt`). The
+  (see `package:sqflite_spatial`'s `openSpatialDatabase` and `SqfliteDatabaseSpatialiteExt`). The
   MethodChannel wire protocol is unchanged, so existing non-spatial `sqflite` code keeps working
   as-is.
-* Breaking: raises `minSdk` from 19 to 21, required by the vendored native library.
+* Raises `minSdk` from 19 to 21, required by the vendored native library.
 * Adds ~6MB per ABI to the built APK/AAB for the bundled native library (SQLite 3.49.1,
   SpatiaLite 4.3.0a, GEOS, Proj4, lwgeom; Apache 2.0). See README.md "Native binary provenance".
 * Verified on a real Android 16 (API 36) emulator: all 8 spatial operations (metadata init,
